@@ -1,0 +1,39 @@
+.Header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    height:100px;
+    padding:0 90px;
+    box-sizing:border-box;
+    align-items:center;
+}
+
+.Header .left{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+}
+
+.Header h1{
+    font-size:24px;
+    color:var(--gray);
+}
+
+.Header button{
+    background-color:var(--red);
+    border-radius:10px;
+    padding:7px 25px;
+    transition:all 0.3s;
+}
+
+.Header button:hover{
+    filter:brightness(0.9);
+    cursor:pointer;
+}
+
+.Header button p{
+    font-family:'Satoshi';
+    font-size:18px;
+    color:var(--gray);
+}
+
