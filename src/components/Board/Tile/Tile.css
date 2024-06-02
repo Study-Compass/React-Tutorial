@@ -1,0 +1,15 @@
+.tile{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: var(--light-grey);
+    transition: all 0.3s;
+}
+
+.tile.x{
+    background-color: var(--red);
+}
+
+.tile.o{
+    background-color: var(--blue);
+}

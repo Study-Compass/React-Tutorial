@@ -3,12 +3,31 @@ import './Tile.css';
 
 // state = "x" : X
 // state = "o" : O
-// state = "blank" : blank
+// state = "b" : blank
 
-function Tile({state, unChange}){
+function Tile({index, state, onChange}){
+    
+    const [tileState, setTileState] = useState(null);
+
+    useEffect(() => {
+        if (state === 'x'){
+            setTileState("X");
+        }
+        if (state === 'o'){
+            setTileState("O");
+        }
+        if (state === 'b'){
+            setTileState("Blank");
+        }
+    }, [])
+
+    function onTileClick(){
+        onChange();
+    }
 
     return (
-        <div className="Tile">
+        <div className="tile" onClick={onTileClick}>
+            {tileState}
 
         </div>
     );
