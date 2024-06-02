@@ -2,14 +2,28 @@ import React,{useState,useEffect} from "react";
 import './Tile.css';
 
 
-// state="x" : x
-// state="o" : o
-// state="blank" : blank
-function Tile({state, onChange}){
+// state="x" : X
+// state="o" : O
+// state="b" : Blank
+function Tile({index, state, onChange}){
+
+    const [tileState, setTileState]=useState(state);
+    useEffect(()=>{
+        if(state==='x')
+            setTileState("X");
+        if(state==='o')
+            setTileState("O");
+        if(state==='b')
+            setTileState("Blank");
+    },[]);
+
+    function onTileClick(){
+        onChange();
+    }
 
     return(
-        <div className="Tile">
-
+        <div className="tile" onClick={onTileClick}>
+            {tileState}
         </div>
     );
 }

@@ -1,6 +1,8 @@
 :root{
     --red:#FA756D;
     --gray:#414141; 
+    --lightGray:#F1F1F1;
+    --blue:#87AFF1;
 }
 button{
     outline:none;
