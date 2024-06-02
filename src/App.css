@@ -1,0 +1,14 @@
+:root{
+    --red: #FA756D;
+    --grey: #414141;
+}
+
+button{
+    outline: none;
+    border: none;
+
+}
+
+p{
+    margin: 0;
+}
