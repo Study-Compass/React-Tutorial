@@ -6,7 +6,7 @@ import './Tile.css';
 // state="o" : O
 // state="b" : Blank
 function Tile({index, state, onChange}){
-
+    console.log(index, state);
     const [tileState, setTileState]=useState(state);
     useEffect(()=>{
         if(state==='x')
@@ -15,10 +15,13 @@ function Tile({index, state, onChange}){
             setTileState("O");
         if(state==='b')
             setTileState("Blank");
-    },[]);
+        console.log(tileState);
+    },[state]);
 
     function onTileClick(){
-        onChange();
+        if (state === 'b'){
+            onChange(index);
+        }
     }
 
     return(

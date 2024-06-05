@@ -1,0 +1,18 @@
+.turnLabel{
+    border-radius:10px;
+    padding:7px 25px;
+}
+
+.turnLabel.one{
+    background-color:var(--blue);
+}
+
+.turnLabel.two{
+    background-color:var(--red);
+}
+
+.turnLabel p{ 
+    font-family:'Satoshi';
+    font-size:18px;
+    color:var(--gray);
+}
