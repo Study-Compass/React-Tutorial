@@ -2,10 +2,10 @@ import React from "react";
 import './Header.css';
 import cross from "../../assets/icons/cross.svg"
 
-function Header(){
+function Header({resetBoard}){
 
     function reset(){
-        console.log("reset-clicked");
+        resetBoard();
     };
 
 

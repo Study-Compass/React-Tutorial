@@ -9,19 +9,25 @@ function TicTacToe(){
     const [turn, setTurn]=useState("1");
 
 
-    function onBoardChange1(){
+    function onBoardChange(){
         setTurn(prevTurn => (prevTurn === "1" ? "2": "1"));
+    }
+
+    function resetBoard(){
+        setTurn("1");
+        console.log("reset-clicked");
+
     }
 
 
     
     return(
         <div className="tic-tac-toe">
-            <Header/>
+            <Header resetBoard={resetBoard}/>
             <div className="content">
                 <TurnLabel turn={turn}/>
                 <div className="board-container">
-                    <Board turn={turn} onBoardChange={onBoardChange1}/>
+                    <Board turn={turn} onBoardChange={onBoardChange}/>
                 </div>
             </div>
         </div>

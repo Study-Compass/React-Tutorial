@@ -1,5 +1,7 @@
 import React,{useState,useEffect} from "react";
 import './Tile.css';
+import O from "../../../assets/icons/O.svg"
+import X from "../../../assets/icons/X.svg"
 
 
 // state="x" : X
@@ -25,8 +27,11 @@ function Tile({index, state, onChange}){
     }
 
     return(
-        <div className="tile" onClick={onTileClick}>
-            {tileState}
+        <div className={`tile ${state}`} onClick={onTileClick}>
+            {
+                state !== "b" && 
+                <img src={state === "x" ? X: O} alt="O-icon" />
+            }
         </div>
     );
 }

@@ -13,7 +13,7 @@ function Board({turn, onBoardChange}){
         console.log(index);
         const newBoard = board.map((r, rowIndex) =>
             r.map((cell, colIndex) =>
-              rowIndex === Math.floor((index-1)/3) && colIndex === (index-1)%3 ? (turn === '1' ? 'x' : 'o') : cell
+              rowIndex === Math.floor((index-1)/3) && colIndex === (index-1)%3 ? (turn === '1' ? 'o' : 'x') : cell
             )
           );
         setBoard(newBoard);
