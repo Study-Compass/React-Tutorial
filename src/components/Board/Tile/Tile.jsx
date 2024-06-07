@@ -7,7 +7,7 @@ import X from "../../../assets/icons/X.svg"
 // state="x" : X
 // state="o" : O
 // state="b" : Blank
-function Tile({index, state, onChange}){
+function Tile({index, state, winner, onChange}){
     console.log(index, state);
     const [tileState, setTileState]=useState(state);
     useEffect(()=>{
@@ -17,11 +17,10 @@ function Tile({index, state, onChange}){
             setTileState("O");
         if(state==='b')
             setTileState("Blank");
-        console.log(tileState);
     },[state]);
 
     function onTileClick(){
-        if (state === 'b'){
+        if (state === 'b' && winner === '0'){
             onChange(index);
         }
     }

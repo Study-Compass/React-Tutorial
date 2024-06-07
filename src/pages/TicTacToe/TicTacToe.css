@@ -14,3 +14,9 @@
 .tic-tac-toe{
     height:100%;
 }
+
+@media (max-width:500px) {
+    .board-container{
+        margin-bottom:100px;
+    }
+}

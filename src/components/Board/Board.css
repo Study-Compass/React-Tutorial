@@ -9,3 +9,12 @@
     flex-direction:row;
     gap:20px;
 }
+
+@media (max-width:500px) {
+    .board{
+        gap:13px;
+    }
+    .board .row{
+        gap:13px;
+    }
+}

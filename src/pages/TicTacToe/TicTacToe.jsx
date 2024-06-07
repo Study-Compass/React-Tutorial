@@ -7,16 +7,20 @@ import TurnLabel from "../../components/TurnLabel/TurnLabel";
 function TicTacToe(){
 
     const [turn, setTurn]=useState("1");
+    const [winner, setWinner]=useState("0");
 
 
     function onBoardChange(){
         setTurn(prevTurn => (prevTurn === "1" ? "2": "1"));
     }
 
-    function resetBoard(){
-        setTurn("1");
-        console.log("reset-clicked");
+    function win(){
+        setWinner(prevWinner => (prevWinner === "0"? "1": "0"));
+    }
 
+    function resetBoard(){
+        setWinner("0");
+        setTurn("0");
     }
 
 
@@ -25,9 +29,9 @@ function TicTacToe(){
         <div className="tic-tac-toe">
             <Header resetBoard={resetBoard}/>
             <div className="content">
-                <TurnLabel turn={turn}/>
+                <TurnLabel turn={turn} winner={winner}/>
                 <div className="board-container">
-                    <Board turn={turn} onBoardChange={onBoardChange}/>
+                    <Board turn={turn} winner={winner} onBoardChange={onBoardChange} win={win}/>
                 </div>
             </div>
         </div>

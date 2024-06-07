@@ -37,3 +37,8 @@
     color:var(--gray);
 }
 
+@media (max-width:500px) {
+    .Header{
+        padding: 0 30px;
+    }
+}
