@@ -2,11 +2,11 @@ import React from "react";
 import './Header.css';
 import cross from "../../assets/icons/cross.svg"
 
-function Header(){
+function Header({resetGame}){
+    // function reset(){
 
-    function reset(){
-        console.log("reset.clicked");
-    };
+    //     console.log("reset.clicked");
+    // };
 
 
     return(
@@ -16,7 +16,7 @@ function Header(){
                 <h1>tic-tac-toe</h1>
             </div>
             <div className="right">
-                <button className="header-button"onClick={reset}>
+                <button className="header-button"onClick={resetGame}>
                     <p>reset</p>
                 </button>
             </div>

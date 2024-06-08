@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './Tile.css';
+import O from '../../../assets/icons/O.svg';
+import X from '../../../assets/icons/X.svg';
 
 // state = "x" : X
 // state = "o" : O
@@ -19,17 +21,26 @@ function Tile({index, state, onChange}){
         if (state === 'b'){
             setTileState("Blank");
         }
-    }, [])
+    }, [state])
+
+    function calculateItemIndex(index){
+        return [Math.floor((index-1)/3), (index-1)%3];
+    }
 
     function onTileClick(){
-        onChange();
+        if (tileState === "Blank"){
+            onChange(calculateItemIndex(index)[0], calculateItemIndex(index)[1]);
+        }
     }
 
     return (
-        <div className="tile" onClick={onTileClick}>
-            {tileState}
-
+        <div className={`tile ${state === 'x' ? 'x' : state === 'o' ? 'o' : ''}`} onClick={onTileClick}>
+            {
+                state !== "b" &&
+                <img src={state === 'x' ? X : O} alt="" />
+            }
         </div>
+        
     );
 }
 

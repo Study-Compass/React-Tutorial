@@ -4,6 +4,9 @@
     border-radius: 10px;
     background-color: var(--light-grey);
     transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tile.x{

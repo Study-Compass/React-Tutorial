@@ -21,7 +21,7 @@
 }
 
 .header button{
-    background-color: var(--red);
+    background-color: var(--red); 
     border-radius: 10px;
     padding: 7px 25px;
     transition: all 0.3s;
