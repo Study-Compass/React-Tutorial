@@ -30,7 +30,7 @@ function TicTacToe(){
                 <div className={`players ${turn === 2 ? "": "blue"}`}>
                     {winner ? `Player ${winner} wins!` : `Player ${turn}'s turn`}
                 </div>
-                <Board key={key} turn = {turn} onBoardChange = {onBoardChange} setWinner={setWinner} />
+                <Board key={key} turn = {turn} winner={winner} onBoardChange = {onBoardChange} setWinner={setWinner}/>
             </div>                     
         </div>
     );

@@ -7,7 +7,7 @@ import X from '../../../assets/icons/X.svg';
 // state = "o" : O
 // state = "b" : blank
 
-function Tile({index, state, onChange}){
+function Tile({index, state, onChange, winner}){
     
     const [tileState, setTileState] = useState(null);
 
@@ -28,8 +28,9 @@ function Tile({index, state, onChange}){
     }
 
     function onTileClick(){
-        if (tileState === "Blank"){
+        if (tileState === "Blank" && winner === null){
             onChange(calculateItemIndex(index)[0], calculateItemIndex(index)[1]);
+            
         }
     }
 

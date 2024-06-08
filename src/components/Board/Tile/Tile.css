@@ -16,3 +16,14 @@
 .tile.o{
     background-color: var(--blue);
 }
+
+@media (max-width:500px) {
+    .tile{
+        width:85px;
+        height:85px;
+    }
+    .tile img{
+        width: 45px;
+        height: 45px;
+    }
+}

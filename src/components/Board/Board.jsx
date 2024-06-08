@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import './Board.css';
 import Tile from "./Tile/Tile";
 
-function Board({onBoardChange, turn, setWinner}){
+function Board({onBoardChange, turn, winner, setWinner}){
     const [board, setBoard] = useState([['b', 'b', 'b'], ['b', 'b', 'b'], ['b', 'b', 'b']]); 
 
     function calculateItemIndex(index){
@@ -12,12 +12,15 @@ function Board({onBoardChange, turn, setWinner}){
     function onTileChange(rowIndex, tileIndex){
         const newBoard = board.map(row => [...row]);
         console.log(newBoard);
-        newBoard[rowIndex][tileIndex] = turn === 1 ? 'x' : 'o';
+        newBoard[rowIndex][tileIndex] = turn === 1 ? 'o' : 'x';
         setBoard(newBoard);
-        onBoardChange();
+        
 
         if (checkWin(newBoard)) {
             setWinner(turn);
+        }
+        else{
+            onBoardChange();
         }
     }
 
@@ -57,6 +60,7 @@ function Board({onBoardChange, turn, setWinner}){
                                             index = {(tileIndex+1)+3*(rowIndex)} 
                                             state = {calculateItemIndex((tileIndex+1)+3*(rowIndex))}
                                             onChange = {onTileChange}
+                                            winner={winner}
                                         />  
                                     );
                                 })

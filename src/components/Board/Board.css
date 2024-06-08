@@ -11,3 +11,12 @@
     gap: 20px;
     /* align-items: center; */
 }
+
+@media (max-width:500px) {
+    .board{
+        gap:13px;
+    }
+    .board .row{
+        gap: 13px;
+    }
+}

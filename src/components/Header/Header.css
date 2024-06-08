@@ -38,3 +38,9 @@
     font-size: 18px;
     color: var(--grey);
 }
+
+@media (max-width:500px) {
+    .header{
+        padding: 40px;
+    }
+}
