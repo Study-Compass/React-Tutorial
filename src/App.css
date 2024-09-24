@@ -1,0 +1,36 @@
+:root{
+    --red: #FA756D;
+    --blue: #87AFF1;
+    --fontcolor: #414141;
+
+}
+
+
+.App{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+button{
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background-color: inherit;
+
+        
+}
+
+h1,
+h2,
+h3,
+p{
+    color: var(--fontcolor);
+    font-family: 'Satoshi';
+}
+
+
+
+
+
+
