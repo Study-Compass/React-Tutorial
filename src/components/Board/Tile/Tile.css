@@ -4,5 +4,10 @@
     border-radius: 10px;
     background-color: var(--emptyTile);
 
-    
+    .player{
+        background-color: var(--blue);
+        width: 125px;
+        height: 125px;
+        border-radius: 10px;
+    }
 }
