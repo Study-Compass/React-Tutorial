@@ -1,0 +1,13 @@
+.tile{
+    width: 125px;
+    height: 125px;
+    border-radius: 10px;
+    background-color: var(--tile);
+
+
+}
+
+.logo{
+    width: 125px;
+    height: 125px;
+}

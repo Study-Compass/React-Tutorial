@@ -1,24 +1,40 @@
 .board{
-    width: 100%;
-    height: 118px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    
+    /* flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0px 80px;
-    box-sizing: border-box;
+    box-sizing: border-box; */
 
-    .player1{
+
+    .board-row{
+        display: flex;
+        gap: 15px;
+        
+    }
+
+    .player{
         background-color: var(--blue);
         height: fit-content;
         border-radius: 10px;
-        padding: 6px 20px;
+        padding: 9px 40px;
+        transition: background-color 0.3s;
 
         h1{
             margin: 0;
             font-size: 20px;
             
         }
+
+        
+    }
+    .player.player2{
+        background-color: var(--red);
     }
 
 
