@@ -8,6 +8,15 @@
 }
 
 .logo{
-    width: 125px;
-    height: 125px;
+    width: 100%;
+    height: 100%;
 }
+
+@media (max-width: 500px){
+    .tile{
+        width: 90px;
+        height: 90px;
+    }
+}
+
+

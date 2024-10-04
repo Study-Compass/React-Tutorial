@@ -39,3 +39,18 @@
 
 
 }
+
+
+@media (max-width: 500px){
+    .board{
+        gap: 10px;
+        .board-row{
+            gap: 10px;
+        }
+    }
+
+    .player{
+        border-radius: 5px;
+        padding: 5px 20px;
+    }
+}

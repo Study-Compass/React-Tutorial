@@ -36,7 +36,33 @@
 }
 
 
+@media (max-width: 500px){
+    .header{
+        padding: 0px 10px;
 
+        botton{
+            border-radius: 5px;
+            padding: 2px 8px;
+
+            h2{
+                font-size: 25px;
+            }
+        }
+
+        .left{
+    
+            .logo{
+                width: 36px;
+                height: 36px;
+            }
+    
+        }
+
+        h1{
+            font-size: 28px;
+        }
+    }
+}
 
 
 
