@@ -27,3 +27,12 @@
         background-color: var(--red);
     }
 }
+
+@media (max-width:500px){
+    .board{
+        gap:10px;
+        .board-row{
+            gap:10px;
+        }
+    }
+}

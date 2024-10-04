@@ -34,3 +34,24 @@
 
 
 }
+
+@media (max-width:500px){
+    .header{
+        padding: 0px 10px;
+
+        button{
+            padding: 5px 10px;
+        }
+    }
+
+    .left{
+        gap: 10px;
+        .logo{
+            height: 15px;
+            width: 15px;
+        }
+    }
+    h1{
+        font-size: 27px; 
+    }
+}
