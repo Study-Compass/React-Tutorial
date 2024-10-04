@@ -1,10 +1,11 @@
 import React from "react";
 import "./Tile.css";
-//import Logo from '../../assets/icons/cross.svg';
+import Logo from '../../../assets/icons/cross.svg';
+import circle from '../../../assets/icons/circle.svg';
 
-function Tile({row, col, value, changeBoard, player}){
+function Tile({row, col, value, changeBoard, player, disabled}){
     function handleClick(){
-        if (value === null){
+        if (!disabled &&value === null){
             if (player === 0){
                 changeBoard(row,col,0);
             }
@@ -16,7 +17,7 @@ function Tile({row, col, value, changeBoard, player}){
     }
     return(
         <div className="tile" onClick={handleClick}>
-            {value && value === 1 ? "X" : value === 0 ? "0" : ''}
+            {value && value === 1 ? <img src={Logo} alt="" className= "logo"/> : value === 0 ? <img src={circle} alt="" className= "logo"/> : ''}
         </div>
     )
 }
