@@ -1,3 +1,11 @@
 :root{
     --grey: #F1F1F1;
+    --red: #FA756D;
+    --text: #414141;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }

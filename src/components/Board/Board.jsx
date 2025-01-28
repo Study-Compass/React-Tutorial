@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Board.scss';
+import logo from '../../assets/icons/cross.svg';
 
 function Board(){
     const [board, setBoard] = useState([

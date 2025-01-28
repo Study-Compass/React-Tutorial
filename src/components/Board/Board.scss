@@ -2,7 +2,10 @@
     display:flex;
     flex-direction: column;
     gap: 10px;
+    flex-grow: 1;
+    justify-content: center;
     .row{
+        justify-content: center;
         display:flex;
         gap: 10px;
         .tile{

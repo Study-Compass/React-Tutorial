@@ -1,0 +1,29 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    padding:0 80px;
+    .left{
+        display: flex;
+        gap: 10px;
+        h1{
+            font-family: 'Satoshi';
+            color: var(--text);
+        }
+    }
+    .right{
+        button{
+            border:none;
+            outline:none;
+            background-color: var(--red);
+            font-size: 18px;
+            padding: 5px 25px;
+            border-radius: 10px;
+            font-family: 'Satoshi';
+            font-weight: 700;
+            color: var(--text);
+
+        }
+    }
+}
