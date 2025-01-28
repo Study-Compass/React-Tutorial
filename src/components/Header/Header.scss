@@ -1,0 +1,31 @@
+.Header{
+    height:10vh;
+    width:100%;
+    padding-left:50px;
+    display:flex;
+    align-items: center;
+    margin-bottom:70px;
+    .Square{
+        width:40px;
+        height:40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--red);
+        border-radius: 5px;
+        margin:10px;
+    }
+    .RestartButton{
+        margin-left:70%;
+        width:130px;
+        height:40px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--red);
+        border-radius: 10px;
+    }
+    .RestartButton:hover{
+        background-color: var(--darkred);
+    }
+}

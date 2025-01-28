@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Tile.scss';
 //the tile can be either an o or x state
 function Tile({ state }) {  
