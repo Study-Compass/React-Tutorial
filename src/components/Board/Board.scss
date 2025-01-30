@@ -4,6 +4,7 @@
     gap: 10px;
     flex-grow: 1;
     justify-content: center;
+    align-items: center;
     .row{
         justify-content: center;
         display:flex;
@@ -16,6 +17,33 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: all 0.5s;
+
+            //replace ampersand with the parent text
+            &.o{
+                background-color: var(--blue);
+            }
+            &.x{
+                background-color: var(--red);
+            }
+        }
+    }
+    .turn{
+        background-color: var(--red);
+        color: var(--text);
+        font-family: "Satoshi";
+        padding: 10px 30px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        transition: all 0.5s;
+        h2{
+            margin:0;
+        }
+        &.o{
+            background-color: var(--blue);
+        }
+        &.x{
+            background-color: var(--red);
         }
     }
 }
