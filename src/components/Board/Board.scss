@@ -22,9 +22,15 @@
             //replace ampersand with the parent text
             &.o{
                 background-color: var(--blue);
+                color: var(--text);
+                font-family: "Satoshi";
+                font-size: 90px;
             }
             &.x{
                 background-color: var(--red);
+                color: var(--text);
+                font-family: "Satoshi";
+                font-size: 90px;
             }
         }
     }

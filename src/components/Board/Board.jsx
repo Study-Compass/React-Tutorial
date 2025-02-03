@@ -26,6 +26,8 @@ function Board(){
         setTurn(!turn);
     }
 
+
+
     return (
         <div className="Board">
             <div className={`turn ${turn ? "x" : "o"}`}>
