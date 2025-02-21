@@ -1,13 +1,14 @@
-.Tile{
-    height:150px;
-    width:150px;
+.Turn{
+    height:6vh;
+    width:40%;
     border-radius: 10px;
-    margin:5px;
+    margin-bottom:3vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left:30%;
     // replace & with parent
     &.turn0{
         background-color:var(--grey);
@@ -19,6 +20,7 @@
     &.turn2{
         background-color:var(--red);
     }
+
     &.turn3{
         background-color:var(--blue);
     }
@@ -26,5 +28,6 @@
     &.turn4{
         background-color:var(--red);
     }
+
 
 }

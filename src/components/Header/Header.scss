@@ -1,10 +1,9 @@
 .Header{
     height:10vh;
     width:100%;
-    padding-left:50px;
     display:flex;
     align-items: center;
-    margin-bottom:70px;
+    margin-bottom:40px;
     .Square{
         width:40px;
         height:40px;
@@ -14,10 +13,11 @@
         background-color: var(--red);
         border-radius: 5px;
         margin:10px;
+        margin-left:4vw;
     }
     .RestartButton{
-        margin-left:70%;
-        width:130px;
+        margin-left:70vw;
+        width:8vw;
         height:40px;
         display:flex;
         justify-content: center;
