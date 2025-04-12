@@ -18,19 +18,18 @@
             align-items: center;
             justify-content: center;
             transition: all 0.5s;
+            font-size: 90px;
 
             //replace ampersand with the parent text
             &.o{
                 background-color: var(--blue);
                 color: var(--text);
                 font-family: "Satoshi";
-                font-size: 90px;
             }
             &.x{
                 background-color: var(--red);
                 color: var(--text);
                 font-family: "Satoshi";
-                font-size: 90px;
             }
         }
     }
@@ -50,6 +49,18 @@
         }
         &.x{
             background-color: var(--red);
+        }
+    }
+}
+
+@media (max-width : 768px) {
+    .Board{
+        .row{
+            .tile{
+                width:100px;
+                height:100px;
+                font-size:70px;
+            }
         }
     }
 }

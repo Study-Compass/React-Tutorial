@@ -1,8 +1,21 @@
 import React from 'react';
 import "./Header.scss";
 import logo from '../../assets/icons/cross.svg';
+import {useEffect} from 'react';
 
-function Header(){
+
+function Header({ reset, setReset }){
+
+    const onReset = () => {
+        setReset(true);
+    }
+
+    useEffect(()=>{
+        if(!reset){
+            //reset worked
+        }
+    },[reset]);
+
     return (
         <div className="Header">
             <div className="left">
@@ -10,7 +23,7 @@ function Header(){
                 <h1>tic-tac-toe</h1>
             </div>
             <div className="right">
-                <button>reset</button>
+                <button onClick={onReset}>reset</button>
             </div>
         </div>
     )
